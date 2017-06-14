@@ -1,13 +1,14 @@
 @import 'mixins.scss';
 @import 'keyframes.scss';
 
-// Fade rainbow of colors
+// Fade rainbow of colors for background
 .rainbow-background {
   color: #f35626;
   background-image: linear-gradient(135deg,#f35626,#feab3a);
   @include animation(hue 30s infinite linear);
 }
 
+// Fade rainbow of colors on text
 .rainbow-font {
   color: #f35626;
   background-image: linear-gradient(135deg,#f35626,#feab3a);
@@ -17,25 +18,34 @@
   @include animation(hue 30s infinite linear);
 }
 
+// "Hey I'm Kellen Schmidt"
 #name {
   font-size: 13vmin;
   font-weight: 500;
 }
 
+// "Front-end web developer extraordinaire"
 #description {
   font-size: 7vmin;
   font-weight: 400;
 }
 
+// Black and white wallpaper
 .title-page-wallpaper {
   background-image: url('../images/mock5-blackwhite.jpg');
   background-size: cover;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   overflow: hidden;
   height: 100vh;
   width: 100%;
+}
+
+// Required by wow.js
+.wow {
+  visibility: hidden;
 }
 
 @import 'media.scss';

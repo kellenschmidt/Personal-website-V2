@@ -12,54 +12,111 @@
     <link href="../node_modules/mdbootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="../node_modules/mdbootstrap/css/mdb.min.css" rel="stylesheet">
+    <!-- Wowjs and animate.css -->
+    <link href="../node_modules/animate.css/animate.min.css" rel="stylesheet">
     <!-- Your custom styles -->
     <link href="../stylesheets/styles.css" rel="stylesheet">
 </head>
 
-<body>
-
-    <div class="title-page-wallpaper">
-        <nav class="navbar navbar-inverse bg-info navbar-toggleable-sm fixed-top rainbow-background">
-            <div class="container">
-                <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <a href="#" class="navbar-brand">Kellen Schmidt</a>
-                
-                <div class="collapse navbar-collapse"  id="mainNavbar">
-                    <div class="navbar-nav">
-                        <a href="#" class="nav-item nav-link">About Me</a>
-                        <div class="dropdown">
-                            <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Projects</a>
-                            <div class="dropdown-menu">
-                                <a href="#" class="dropdown-item">URL Shortener</a>
-                                <a href="#" class="dropdown-item">Material Tip Calculator</a>
-                                <a href="#" class="dropdown-item">GeoDeals Web App</a>
-                                <a href="#" class="dropdown-item">GroceryQuest Web App</a>
-                            </div>
-                        </div>
-                        <a href="#" class="nav-item nav-link">Work Experience</a>
-                        <a href="#" class="nav-item nav-link">Contact Me</a>
-                    </div><!-- navbar-nav -->
-                </div><!-- collapse -->
-            </div><!-- container -->
-        </nav><!-- navbar -->
-
-        <div class="container-fluid h-100">
-            <div class="row align-items-center h-100">
-                <div class="rainbow-font offset-lg-1 col-lg-8">
-                    <!--<div id="intro">Hey I'm</div>-->
-                    <div id="name">Hey I'm <br class="hidden-lg-up"/>Kellen Schmidt</div>
-                    <div id="description">Full-stack web developer extraordinaire</div>
-                </div><!-- .rainbow-font -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-
-        <div class="containter">
+<body class="title-page-wallpaper">
+    
+    <nav class="navbar navbar-inverse bg-info navbar-toggleable-sm fixed-top rainbow-background">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             
+            <a href="#" class="navbar-brand">Kellen Schmidt</a>
+            
+            <div class="collapse navbar-collapse"  id="mainNavbar">
+                <div class="navbar-nav">
+                    <a href="#" class="nav-item nav-link">About Me</a>
+                    
+                    <div class="dropdown">
+                        <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Projects</a>
+                        
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">URL Shortener</a>
+                            <a href="#" class="dropdown-item">Material Tip Calculator</a>
+                            <a href="#" class="dropdown-item">GeoDeals Web App</a>
+                            <a href="#" class="dropdown-item">GroceryQuest Web App</a>
+                        </div><!-- dropdown-menu -->
+                    </div><!-- dropdown -->
+                    
+                    <a href="#" class="nav-item nav-link">Work Experience</a>
+                    
+                    <a href="#" class="nav-item nav-link">Contact Me</a>
+                </div><!-- navbar-nav -->
+            </div><!-- collapse -->
         </div><!-- container -->
-    </div><!-- .title-page-wallpaper -->
+    </nav><!-- navbar -->
+
+    <div class="container-fluid h-100">
+        <div class="row align-items-center h-100">
+            <div class="rainbow-font offset-lg-1 col-lg-8">
+                <div id="name">Hey I'm <br class="hidden-lg-up"/>Kellen Schmidt</div>
+                <div id="description">Full-stack web developer extraordinaire</div>
+            </div><!-- rainbow-font -->
+        </div><!-- row -->
+    </div><!-- container -->
+
+    <div class="container bg-faded px-5 py-2 z-depth-5" id="mainContent">
+        <div class="row">
+            
+            <!-- Start content here -->
+
+            <div id="url-shortener" class="wow fadeInUp">
+                <h2>URL Shortener</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur felis vel lobortis rutrum. Nunc dictum
+                    neque in blandit finibus. Morbi tellus lacus, auctor ac justo in, dapibus commodo neque. Integer eget enim in
+                    urna faucibus egestas. In ultricies quam at nibh iaculis, in pharetra felis placerat. Integer vitae dapibus metus,
+                    finibus ullamcorper ex. Donec sed orci est. Nam laoreet urna maximus metus imperdiet tempus. Nunc velit ex, imperdiet
+                    malesuada lectus ac, efficitur auctor lectus. Cras auctor nisl et pulvinar placerat. </p>
+            </div>
+            <div id="material-tip-calculator" class="wow fadeInUp">
+                <h2>Material Tip Calculator</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur felis vel lobortis rutrum. Nunc dictum
+                    neque in blandit finibus. Morbi tellus lacus, auctor ac justo in, dapibus commodo neque. Integer eget enim in
+                    urna faucibus egestas. In ultricies quam at nibh iaculis, in pharetra felis placerat. Integer vitae dapibus metus,
+                    finibus ullamcorper ex. Donec sed orci est. Nam laoreet urna maximus metus imperdiet tempus. Nunc velit ex, imperdiet
+                    malesuada lectus ac, efficitur auctor lectus. Cras auctor nisl et pulvinar placerat. </p>
+            </div>
+            <div id="geodeals" class="wow fadeInUp">
+                <h2>GeoDeals Web App</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur felis vel lobortis rutrum. Nunc dictum
+                    neque in blandit finibus. Morbi tellus lacus, auctor ac justo in, dapibus commodo neque. Integer eget enim in
+                    urna faucibus egestas. In ultricies quam at nibh iaculis, in pharetra felis placerat. Integer vitae dapibus metus,
+                    finibus ullamcorper ex. Donec sed orci est. Nam laoreet urna maximus metus imperdiet tempus. Nunc velit ex, imperdiet
+                    malesuada lectus ac, efficitur auctor lectus. Cras auctor nisl et pulvinar placerat. </p>
+            </div>
+            <div id="groceryquest" class="wow fadeInUp">
+                <h2>GroceryQuest Web App</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur felis vel lobortis rutrum. Nunc dictum
+                    neque in blandit finibus. Morbi tellus lacus, auctor ac justo in, dapibus commodo neque. Integer eget enim in
+                    urna faucibus egestas. In ultricies quam at nibh iaculis, in pharetra felis placerat. Integer vitae dapibus metus,
+                    finibus ullamcorper ex. Donec sed orci est. Nam laoreet urna maximus metus imperdiet tempus. Nunc velit ex, imperdiet
+                    malesuada lectus ac, efficitur auctor lectus. Cras auctor nisl et pulvinar placerat. </p>
+            </div>
+            <div id="wikibooks" class="wow fadeInUp">
+                <h2>Wikibooks Search Engine</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur felis vel lobortis rutrum. Nunc dictum
+                    neque in blandit finibus. Morbi tellus lacus, auctor ac justo in, dapibus commodo neque. Integer eget enim in
+                    urna faucibus egestas. In ultricies quam at nibh iaculis, in pharetra felis placerat. Integer vitae dapibus metus,
+                    finibus ullamcorper ex. Donec sed orci est. Nam laoreet urna maximus metus imperdiet tempus. Nunc velit ex, imperdiet
+                    malesuada lectus ac, efficitur auctor lectus. Cras auctor nisl et pulvinar placerat. </p>
+                </div>
+            <div id="fyd-robot" class="wow fadeInUp">
+                <h2>First Year Engineering Robot</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur felis vel lobortis rutrum. Nunc dictum
+                    neque in blandit finibus. Morbi tellus lacus, auctor ac justo in, dapibus commodo neque. Integer eget enim in
+                    urna faucibus egestas. In ultricies quam at nibh iaculis, in pharetra felis placerat. Integer vitae dapibus metus,
+                    finibus ullamcorper ex. Donec sed orci est. Nam laoreet urna maximus metus imperdiet tempus. Nunc velit ex, imperdiet
+                    malesuada lectus ac, efficitur auctor lectus. Cras auctor nisl et pulvinar placerat. </p>
+            </div>
+            <!-- End content here -->
+
+        </div><!-- row -->
+    </div><!-- container -->
 
     
 
@@ -72,6 +129,11 @@
     <script type="text/javascript" src="../node_modules/mdbootstrap/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="../node_modules/mdbootstrap/js/mdb.min.js"></script>
+    <!-- Wowjs Javascript -->
+    <script type="text/javascript" src="../node_modules/wowjs/dist/wow.min.js"></script>
+    <!-- Your custom scripts -->
+    <script type="text/javascript" src="../scripts/script.js"></script>
+    
 </body>
 
 </html>
