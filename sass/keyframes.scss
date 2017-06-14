@@ -1,0 +1,9 @@
+// Color changing text animation
+@keyframes hue {
+  from {
+    @include filter(hue-rotate(0deg));
+  }
+  to {
+    @include filter(hue-rotate(-360deg));
+  }
+}

@@ -1,0 +1,12 @@
+// Mixins
+@mixin animation($fourArguments...) {
+    -webkit-animation: $fourArguments;
+       -moz-animation: $fourArguments;
+         -o-animation: $fourArguments;
+            animation: $fourArguments;
+}
+
+@mixin filter($function) {
+    -webkit-filter: $function;
+            filter: $function;
+}

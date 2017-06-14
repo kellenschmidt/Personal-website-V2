@@ -1,0 +1,43 @@
+@import 'mixins.scss';
+@import 'keyframes.scss';
+
+// Fade rainbow of colors
+.rainbow-background {
+  color: #f35626;
+  background-image: linear-gradient(135deg,#f35626,#feab3a);
+  @include animation(hue 30s infinite linear);
+}
+
+.rainbow-font {
+  color: #f35626;
+  background-image: linear-gradient(135deg,#f35626,#feab3a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;       // Only for webkit
+  @include animation(hue 30s infinite linear);
+}
+
+#name-and-description {
+  height: 100%;
+  font-weight: 400 !important;
+}
+
+#name {
+  font-weight: 500;
+}
+
+#description {
+  font-weight: 400;
+}
+
+.title-page-wallpaper {
+  background-image: url('../images/mock5-blackwhite.jpg');
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
