@@ -17,16 +17,13 @@
   @include animation(hue 30s infinite linear);
 }
 
-#name-and-description {
-  height: 100%;
-  font-weight: 400 !important;
-}
-
 #name {
+  font-size: 13vmin;
   font-weight: 500;
 }
 
 #description {
+  font-size: 7vmin;
   font-weight: 400;
 }
 
@@ -41,3 +38,4 @@
   width: 100%;
 }
 
+@import 'media.scss';
