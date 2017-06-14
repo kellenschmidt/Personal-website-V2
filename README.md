@@ -16,15 +16,19 @@ http://sass-lang.com
 Powerful and free Material Design UI KIT. Combines the best of Bootstrap and Google's Material Design into one package.
 https://mdbootstrap.com
 
+### Wow.js
+Reveals CSS animations as you scroll down a page. Triggers animate.css animations.
+http://mynameismatthieu.com/WOW
+
 ## How to run the project locally
 1. Download all of the files from github
     ```
     git clone https://github.com/kellenschmidt/Personal-website-V2.git
     cd Personal-website-V2
     ```
-2. Install MDBootstrap
+2. Install dependencies
     ```
-    npm install mdbootstrap
+    npm install mdbootstrap wowjs
     ```
 3. Start Sass compiler
     ```
