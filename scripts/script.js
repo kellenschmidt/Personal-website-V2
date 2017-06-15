@@ -2,7 +2,7 @@
 wow = new WOW({
     boxClass: 'wow',
     animateClass: 'animated',
-    offset: 160,
+    offset: 150,
     mobile: true,
     live: true
 })
@@ -30,9 +30,10 @@ $(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            var ratio = 90/1030*$(window).height();
             if (target.length) {
                 $('html, body').animate({
-                scrollTop: target.offset().top
+                scrollTop: target.offset().top-ratio
                 }, 800);
                 return false;
             }

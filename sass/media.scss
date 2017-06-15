@@ -1,26 +1,39 @@
-/*@media (max-width: 576px) {  
-  #name {font-size:4.5rem;}
-  #description {font-size:3rem;}
-}*/
-
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, width: 576px and up) */
 @media (min-width: 576px) {  
-
+  #name-and-description {
+    margin-left: 2rem;
+  }
 }
  
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Medium devices (tablets, width: 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+  #name {font-size:9.5vmin;}
+  #description {font-size:5vmin;}
+}
 
+@media (min-width: 768px) and (orientation: portrait){
+  #name {font-size:9vmin;}
+  #description {font-size:4.7vmin;}
 }
  
-/* Large devices (desktops, 992px and up) */
+/* Large devices (large tablets, width: 992px and up) */
 @media (min-width: 992px) {
-  #name {font-size:10vmin;}
-  #description {font-size:6vmin;}
+  #name {font-size:9vmin;}
+  #description {font-size:4.4vmin;}
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 992px) and (orientation: portrait) {
+  #name {font-size:9.1vmin;}
+  #description {font-size:4.8vmin;}
+}
+
+/* Extra large devices (any laptop or desktop, width: 1200px and up) */
 @media (min-width: 1200px) {  
-  #name {font-size:10vmin;}
-  #description {font-size:5vmin;}
+  #name {font-size:8.95vmin;}
+  #description {font-size:4.7vmin;}
+}
+
+@media (min-width: 1200px) and (max-aspect-ratio: 15/10) {
+  #name {font-size:7.1vmin;}
+  #description {font-size:3.8vmin;}
 }
