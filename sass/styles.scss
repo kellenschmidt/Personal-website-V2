@@ -1,5 +1,5 @@
-@import 'mixins.scss';
-@import 'keyframes.scss';
+@import 'mixins';
+@import 'keyframes';
 
 // Fade rainbow of colors for background
 .rainbow-background {
@@ -68,9 +68,33 @@
   background-color: magenta;
 }
 
+a.card-title {
+  font-weight: 300;
+  i {
+    font-size: 65%
+  }
+}
+
+// Colors for icons
+.li-ic, .li-ic:hover {
+  color: #0077B5;
+}
+.github-ic, .github-ic:hover {
+  color: black;
+}
+.email-ic, .email-ic:hover {
+  color: #ea4335;
+}
+.fb-ic, .fb-ic:hover {
+  color: #3b5998;
+}
+.ig-ic, .ig-ic:hover {
+  color: #833ab4;
+}
+
 // Required by wow.js
 .wow {
   visibility: hidden;
 }
 
-@import 'media.scss';
+@import 'media';

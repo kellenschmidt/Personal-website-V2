@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>V2</title>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="../node_modules/mdbootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
@@ -63,19 +63,20 @@
     <div class="container bg-faded px-5 py-3 z-depth-5" id="mainContent">
 
         <div class="wow fadeInUp" id="about-me">
-            <h1 class="mb-2">About Me</h1>
+            <h1 class="mb-3">About Me</h1>
 
             <div class="row mb-5">
                 <div class="col-6 offset-3 offset-md-0 col-md-2">
-                    <img class="img-fluid rounded-circle z-depth-2" src="../images/kellen.png"/>
+                    <img class="img-fluid rounded-circle z-depth-2 mb-2" src="../images/kellen.png"/>
                 </div><!-- col -->
-                <div class="col-md-10">
+                <div class="col-md-10 text-center text-md-left">
                     <p><strong>Kellen Schmidt</strong></p>
-                    <div>
-                        <a class="fb-ic"><i class="fa fa-facebook"></i></a>
-                        <a class="li-ic"><i class="fa fa-linkedin"></i></a>
-                        <a class="github-ic"><i class="fa fa-github"></i></a>
-                        <a class="email-ic"><i class="fa fa-envelope-o"></i></a>
+                    <div class="mb-1">
+                        <a class="li-ic mr-2" href="https://linkedin.com/in/kellens" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        <a class="github-ic mr-2" href="https://github.com/kellenschmidt" data-toggle="tooltip" data-placement="bottom" title="GitHub"><i class="fa fa-github"></i></a>
+                        <a class="email-ic mr-2" href="mailto: kellenschmidt31@gmail.com" data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a>
+                        <a class="fb-ic mr-2" href="https://facebook.com" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>
+                        <a class="ig-ic mr-2" href="https://instagram.com" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur felis vel lobortis rutrum. Nunc dictum neque in blandit finibus. Morbi tellus lacus, auctor ac justo in, dapibus commodo neque.</p>
                 </div><!-- col -->
@@ -83,7 +84,8 @@
         </div>
         
 
-        <h1 class="mb-2">Projects</h1>
+        <h1 class="mb-3">Projects</h1>
+        
         <div class="row">
 
             <div class="col-lg-4 col-md-6 mb-3">
@@ -102,7 +104,7 @@
                     <!--Card content-->
                     <div class="card-block">
                         <!--Title-->
-                        <h4 class="card-title">URL Shortener</h4>
+                        <a class="h4 card-title d-inline-block" href="https://kellenschmidt.com">URL Shortener<i class="fa fa-external-link ml-2 small"></i></a>
                         <!--Text-->
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur felis vel lobortis rutrum. Nunc dictum
                         neque in blandit finibus. Morbi tellus lacus, auctor ac justo in, dapibus commodo neque.</p>
@@ -130,7 +132,7 @@
                     <!--Card content-->
                     <div class="card-block">
                         <!--Title-->
-                        <h4 class="card-title">Material Tip Calculator</h4>
+                        <a class="h4 card-title d-inline-block" href="https://play.google.com/store/apps/details?id=com.kellenschmidt.materialtipcalculator">Material Tip Calculator<i class="fa fa-external-link ml-2 small"></i></a>
                         <!--Text-->
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur felis vel lobortis rutrum. Nunc dictum
                         neque in blandit finibus. Morbi tellus lacus, auctor ac justo in, dapibus commodo neque.</p>
@@ -255,10 +257,10 @@
             </div><!-- col -->
         </div><!-- /.row -->
 
-        <h1 id="work-experience" class="mb-2">Work Experience</h1>
+        <h1 id="work-experience" class="mb-3">Work Experience</h1>
 
         <div class="row">
-            <div class="col-md-6 mb-3">
+            <div class="col-md-6 mb-5">
                 <!--Card-->
                 <div class="card wow fadeInUp">
 
@@ -278,7 +280,7 @@
                         <!--Text-->
                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur felis vel lobortis rutrum. Nunc dictum
                         neque in blandit finibus. Morbi tellus lacus, auctor ac justo in, dapibus commodo neque.</p>
-                        <a href="" class="btn btn-primary">Learn More</a>
+                        <a href="" class="btn btn-primary"><i class="fa fa-clone left mr-2"></i>Learn More</a>
                     </div>
                     <!--/.Card content-->
 
@@ -286,6 +288,14 @@
                 <!--/.Card-->
             </div><!-- col -->
         </div><!-- row -->
+
+        <h1 id="contact-me" class="mb-3">Contact Me</h1>
+
+        <div class="row">
+            <div class="">
+                <a type="button" class="btn-floating btn-small btn-fb" href="https://facebook.com"><i class="fa fa-facebook"></i></a>
+            </div>
+        </div>
 
         <!--Footer-->
         <div class="row" id="footer-row">
