@@ -1,3 +1,4 @@
+@import '../node_modules/mdbootstrap/sass/mdb/free/data/_prefixer.scss';
 @import 'mixins';
 @import 'keyframes';
 
@@ -90,6 +91,34 @@ a.card-title {
 }
 .ig-ic, .ig-ic:hover {
   color: #833ab4;
+}
+
+.social-icon {
+  font-size: 100%;
+  line-height: 130%;
+  transition: font-size 0.15s, line-height 0.15s; 
+  &:hover {
+    font-size: 130%;
+    line-height: 100%;
+  }
+}
+
+.chip {
+  display: inline-block;
+  font-size: 16px;
+  padding: 0 1em;
+  margin: 0 0.8em 1em 0;
+  height: 2.5em;
+  line-height: 2.5em;
+  border-radius: 1.5em;
+  background-color: lightgray;
+  img {
+    float: left;
+    margin: 0 0.6em 0 -1em;
+    height: 2.5em;
+    width: 2.5em;
+    border-radius: 50%;
+  }
 }
 
 // Required by wow.js
