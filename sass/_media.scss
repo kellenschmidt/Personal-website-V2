@@ -1,7 +1,19 @@
 /* Small devices (landscape phones, width: 576px and up) */
 @media (min-width: 576px) {  
-  #name-and-description {
-    margin-left: 2rem;
+  #name-and-description {margin-left: 2rem;}
+  #education {
+    h4 {
+      font-size: 1.5rem;
+    }
+    h5 {
+      font-size: 1.25rem;
+    }
+    img {
+      height: 15.5rem;
+    }
+    &>div {
+    padding: 2rem;
+  }
   }
 }
  
@@ -9,6 +21,17 @@
 @media (min-width: 768px) {
   #name {font-size:9.5vmin;}
   #description {font-size:5vmin;}
+  #education {
+    h4 {
+      font-size: 1.5rem;
+    }
+    h5 {
+      font-size: 1.25rem;
+    }
+    img {
+      height: 9rem;
+    }
+  }
 }
 
 @media (min-width: 768px) and (orientation: portrait){

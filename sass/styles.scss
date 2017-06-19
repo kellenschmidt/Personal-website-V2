@@ -69,6 +69,7 @@
   background-color: magenta;
 }
 
+// External link icon
 a.card-title {
   font-weight: 300;
   i {
@@ -93,7 +94,9 @@ a.card-title {
   color: #833ab4;
 }
 
+// Social media icons
 .social-icon {
+  // See _media.css for width-specific modifications
   font-size: 100%;
   line-height: 130%;
   transition: font-size 0.15s, line-height 0.15s; 
@@ -101,8 +104,13 @@ a.card-title {
     font-size: 130%;
     line-height: 100%;
   }
+  @media(max-width: 768px) {
+    font-size: 130%;
+    line-height: 100%;
+  }
 }
 
+// Custom chip class (used for skills)
 .chip {
   display: inline-block;
   font-size: 16px;
@@ -118,6 +126,25 @@ a.card-title {
     height: 2.5em;
     width: 2.5em;
     border-radius: 50%;
+  }
+}
+
+// Education section
+#education {
+  // See _media.css for width-specific modifications
+  h4 {
+    font-size: 1.3rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  img {
+    height: 15.5rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  &>div {
+    padding: 1.25rem;
   }
 }
 
