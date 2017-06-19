@@ -20,6 +20,10 @@ https://mdbootstrap.com
 Reveals CSS animations as you scroll down a page. Triggers animate.css animations.
 http://mynameismatthieu.com/WOW
 
+### Animate.css
+Cool, fun, and cross-browser animations for just-add-water-awesomeness.
+https://daneden.github.io/animate.css
+
 ## How to run the project locally
 1. Download all of the files from github
     ```
