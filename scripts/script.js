@@ -41,6 +41,14 @@ $(function () {
     });
 });
 
+// Enable tooltips
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
-})
+});
+
+// Collapse navigation bar when link is clicked
+$(function(){ 
+    $('.navbar-nav a:not([data-toggle])').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+    });
+});
