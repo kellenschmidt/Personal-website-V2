@@ -1,3 +1,6 @@
+# Stylesheets (.css)
+*/stylesheets/
+
 # Sass
 .sass-cache/
 *.css.map
