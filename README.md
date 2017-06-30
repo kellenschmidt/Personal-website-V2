@@ -1,4 +1,4 @@
-# Personal-website-V2
+# kellenschmidt.com
 <img src="https://varahund.files.wordpress.com/2016/06/varning.jpg" width=24/><i>  Currently in progress</i>
 
 https://kellenschmidt.com
