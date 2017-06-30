@@ -1,7 +1,7 @@
 # Personal-website-V2
 <img src="https://varahund.files.wordpress.com/2016/06/varning.jpg" width=24/><i>  Currently in progress</i>
 
-https://kellenschmidt.me
+https://kellenschmidt.com
 
 Personal website of Kellen Schmidt made to demonstrate his abilities as well as show his work experience and portfolio of projects.
 
@@ -27,12 +27,12 @@ https://daneden.github.io/animate.css
 ## How to run the project locally
 1. Download all of the files from github
     ```
-    git clone https://github.com/kellenschmidt/Personal-website-V2.git
-    cd Personal-website-V2
+    git clone https://github.com/kellenschmidt/kellenschmidt.com.git
+    cd kellenschmidt.com/public/
     ```
 2. Install dependencies
     ```
-    npm install mdbootstrap wowjs
+    npm install
     ```
 3. Start Sass compiler
     ```
@@ -40,10 +40,5 @@ https://daneden.github.io/animate.css
     ```
 4. Open the website
     ```
-    open html/index.html
+    open index.html
     ```
-    
----
-*V2?? What happened to V1?*
-
-V2 is a complete redesign of personal website V1 which was abandoned in favor of this redesign
