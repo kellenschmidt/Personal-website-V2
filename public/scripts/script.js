@@ -58,3 +58,19 @@ $(function() {
     $('.next').click(function(){ $('.carousel').carousel('next');return false; });
     $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
 });
+
+// Modal for "projects" and "work experience"
+$('#learnMoreModal').on('show.bs.modal', function(event) {
+    var button = $(event.relatedTarget); // Button that triggered the modal
+    var header = button.attr('id'); // Extract info from data-* attributes
+    var body = '<h4>Achievements</h4><ul><li>Did great stuff</li><li>Made boatloads of cash</li></ul>';
+    var githubLink = 'https://github.com/kellenschmidt/kellenschmidt.com';
+    var bgColor = 'purple';
+        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+    var modal = $(this);
+    modal.find('.modal-title').html(header);
+    modal.find('.modal-body').html(body);
+    modal.find('.modal-footer a').attr('href', githubLink);
+    modal.find('.modal-footer button').css('background-color', bgColor);
+})
