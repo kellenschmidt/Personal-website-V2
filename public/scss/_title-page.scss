@@ -1,0 +1,31 @@
+// "Hey I'm Kellen Schmidt"
+#name {
+  font-size: 13vmin;
+  font-weight: 500;
+}
+
+// "Front-end web developer extraordinaire"
+#description {
+  font-size: 7vmin;
+  font-weight: 400;
+}
+
+// Black and white wallpaper
+.title-page-wallpaper {
+  background-image: url('../images/mock5-blackwhite-5.png');
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+/*  Down scroll arrow  */
+#title-scroll-down {
+    animation: bouncing 1.3s infinite ease-in-out;
+    position: fixed;
+    opacity: 0.75;
+}

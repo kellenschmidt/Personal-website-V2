@@ -1,0 +1,23 @@
+#education {
+  position: relative;
+  // See _media.css for width-specific modifications
+  h4 {
+    font-size: 1.3rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  img {
+    height: 15.5rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  &>div {
+    padding: 1.25rem;
+    margin: 0 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}

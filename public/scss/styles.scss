@@ -1,0 +1,14 @@
+@import '../node_modules/mdbootstrap/sass/mdb/free/data/_prefixer.scss';
+@import 'utilities/mixins';
+@import 'utilities/keyframes';
+
+@import 'shared';
+@import 'title-page';
+@import 'about-me';
+@import 'education';
+@import 'projects';
+@import 'skills';
+@import 'courses';
+@import 'footer';
+
+@import 'utilities/media';

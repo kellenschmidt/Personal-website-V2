@@ -1,0 +1,24 @@
+// Colored buttons for project cards
+#tip-calc-btn {
+  background-color: teal;
+}
+#geodeals-btn {
+  background-color: red;
+}
+#groceryquest-btn {
+  background-color: orange;
+}
+#wikibooks-btn {
+  background-color: #8000FF;
+}
+#robot-btn {
+  background-color: magenta;
+}
+
+// External link icon
+a.card-title {
+  font-weight: 300;
+  i {
+    font-size: 65%
+  }
+}
