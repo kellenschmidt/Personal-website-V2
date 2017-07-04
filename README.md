@@ -36,7 +36,7 @@ https://daneden.github.io/animate.css
     ```
 3. Start Sass compiler
     ```
-    sass --watch sass:stylesheets
+    sass --watch scss:stylesheets
     ```
 4. Open the website
     ```
