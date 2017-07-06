@@ -60,17 +60,34 @@ $(function() {
 });
 
 // Modal for "projects" and "work experience"
-$('#learnMoreModal').on('show.bs.modal', function(event) {
-    var button = $(event.relatedTarget); // Button that triggered the modal
-    var header = button.attr('id'); // Extract info from data-* attributes
-    var body = '<h4>Achievements</h4><ul><li>Did great stuff</li><li>Made boatloads of cash</li></ul>';
-    var githubLink = 'https://github.com/kellenschmidt/kellenschmidt.com';
-    var bgColor = 'purple';
-        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-    var modal = $(this);
-    modal.find('.modal-title').html(header);
-    modal.find('.modal-body').html(body);
-    modal.find('.modal-footer a').attr('href', githubLink);
-    modal.find('.modal-footer button').css('background-color', bgColor);
-})
+$('#learnMoreModal').on('show.bs.modal', function($event) {
+    var $button = $($event.relatedTarget); // Button that triggered the modal
+    var $id = $button.attr('id');
+    var $modal = $(this);
+    
+    // Display Material Design loading spinner
+    $modal.find('.modal-body').html('<div class="text-center"><svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg"><circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div>');
+    // Set button to default color
+    $modal.find('.modal-footer button').css('background-color', 'buttonface');
+
+    //AJAX request to get content for modal from API and set modal content in callback
+    $.ajax({
+        "url": "https://api.kellenschmidt.com/modal/" + $id,
+        "type": "GET",
+        "dataType": "json",
+        "timeout": 10000,
+        "data": {},
+        "success": function($data) {
+            // Update the modal's content
+            $modal.find('.modal-title').html($data.header);
+            $modal.find('.modal-body').html($data.body);
+            $modal.find('.modal-footer a').attr('href', $data.github_link);
+            $modal.find('.modal-footer button').css('background-color', $data.accent_color);
+        },
+        "error": function($jqXHR, $textStatus, $errorThrown) {
+            // Display error message
+            $modal.find('.modal-title').html('Ajax request failed: ' + $textStatus + ', ' + $errorThrown);
+            $modal.find('.modal-body').html('<h4>Response</h4><br><plaintext>' + $jqXHR.responseText + '</plaintext>');
+        }
+    });
+});
