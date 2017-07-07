@@ -4,7 +4,6 @@
 // Equal card height
 .row-equal > div[class*='col-'] {
     display: flex;
-    flex: 1 0 auto;
 }
 .row-equal .card {
    width: 100%;

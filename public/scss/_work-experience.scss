@@ -1,7 +1,10 @@
-.work-dates {
-    margin-top: 0.3rem;
-}
-
+// Note: The card in each .row with the longest .modal-body content will have relative position,
+// all other cards should be given absolute position and a bottom value to move their buttons to 
+// the bottom of their cards (19px represents the approx padding bottom on the buttons)
 #lehigh-hanson-btn {
     background-color: #24579E;
+}
+
+.work-dates {
+    margin-top: 0.3rem;
 }

@@ -1,18 +1,29 @@
-// Colored buttons for project cards
+// Colored buttons
+// Note: The card in each .row with the longest .modal-body content will have relative position,
+// all other cards should be given absolute position and a bottom value to move their buttons to 
+// the bottom of their cards (19px represents the approx padding bottom on the buttons)
 #url-shortener-btn {
   background-color: #FE993A;
+  position: absolute;
+  bottom: 19px;
 }
 #geodeals-btn {
   background-color: #FD55CD;
 }
 #groceryquest-btn {
   background-color: #905FFF;
+  position: absolute;
+  bottom: 19px;
 }
 #wikibooks-btn {
   background-color: #398BFF;
+  position: absolute;
+  bottom: 19px;
 }
 #tip-calc-btn {
   background-color: #25DFB1; 
+  position: absolute;
+  bottom: 19px;
 }
 #robot-btn {
   background-color: #35A608;
