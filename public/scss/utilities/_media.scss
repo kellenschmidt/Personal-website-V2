@@ -40,6 +40,12 @@
       font-size: 0.85rem;
     }
   }
+  #url-shortener-btn,
+  #wikibooks-btn,
+  #tip-calc-btn {
+    position: absolute;
+    bottom: 19px;
+  }
 }
 
 @media (min-width: 768px) and (orientation: portrait){
@@ -53,6 +59,13 @@
   #description {font-size:4.4vmin;}
   .carousel-item h2 {
     font-size: 2rem;
+  }
+  #url-shortener-btn,
+  #groceryquest-btn,
+  #wikibooks-btn,
+  #tip-calc-btn {
+    position: absolute;
+    bottom: 19px;
   }
 }
 
