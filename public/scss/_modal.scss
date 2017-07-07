@@ -39,3 +39,18 @@ $duration: 1.4s;
    transform:rotate(450deg);
  }
 }
+
+.modal-body {
+  p {
+    margin-bottom: 1.5rem;
+  }
+  ul {
+    margin: 0 2rem 1.5rem 2rem;
+    li {
+      list-style-type: disc;
+    }
+    ul {
+      margin-bottom: 0;
+    }
+  }
+}
