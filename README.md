@@ -12,20 +12,19 @@ The site was written completely from scratch by Kellen in his freetime
 The most popular HTML, CSS, and JS framework in the world for building responsive, mobile-first projects on the web. https://v4-alpha.getbootstrap.com/
 
 ### Sass
-The most mature, stable, and powerful professional grade CSS extension language in the world.
-http://sass-lang.com
+The most mature, stable, and powerful professional grade CSS extension language in the world. http://sass-lang.com
 
 ### MDBootstrap
-Powerful and free Material Design UI KIT. Combines the best of Bootstrap and Google's Material Design into one package.
-https://mdbootstrap.com
+Powerful and free Material Design UI KIT. Combines the best of Bootstrap and Google's Material Design into one package. https://mdbootstrap.com
+
+### Materialize.css
+A modern responsive front-end framework based on Material Design. Currently uses only a small subset of the available components. http://materializecss.com
 
 ### Wow.js
-Reveals CSS animations as you scroll down a page. Triggers animate.css animations.
-http://mynameismatthieu.com/WOW
+Reveals CSS animations as you scroll down a page. Triggers animate.css animations. http://mynameismatthieu.com/WOW
 
 ### Animate.css
-Cool, fun, and cross-browser animations for just-add-water-awesomeness.
-https://daneden.github.io/animate.css
+Cool, fun, and cross-browser animations for just-add-water-awesomeness. https://daneden.github.io/animate.css
 
 ### Cron
 Software utility that enables scheduling of commands or shell scripts to run periodically at fixed times, dates, or intervals (Used to schedule automatic renewal of https certificates). https://github.com/kelektiv/node-cron
