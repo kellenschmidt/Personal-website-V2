@@ -1,77 +1,76 @@
 // See _media.css for width-specific modifications to h2 and h6
 
 /* Card Carousel */
-// Equal card height
-.row-equal > div[class*='col-'] {
-    display: flex;
-}
-.row-equal .card {
-   width: 100%;
-}
-.carousel-inner {
-  padding-bottom: 0.5rem;
-}
+#coursesCarousel {
+	// Equal card height
+	.row-equal > div[class*='col-'] {
+			display: flex;
+	}
+	.row-equal .card {
+		width: 100%;
+	}
+	.carousel-inner {
+		padding-bottom: 0.5rem;
+		word-wrap: break-word;
+	}
 
-/* Arrow buttons */
-// Wrapper
-.icon-button {
-	background-color: white;
-	display: inline-block;
-	font-size: 1.5rem;
-	height: 3rem;
-  width: 3rem;
-	line-height: 3rem;
-  border-radius: 3rem;
-	margin: 0.5rem 0.5rem 1rem;
-	position: relative;
-}
+	/* Arrow buttons */
+	// Wrapper
+	.icon-button {
+		background-color: white;
+		display: inline-block;
+		font-size: 1.5rem;
+		height: 3rem;
+		width: 3rem;
+		line-height: 3rem;
+		border-radius: 3rem;
+		margin: 0.5rem 0.5rem 1rem;
+		position: relative;
+	}
 
-// Circle
-.icon-button span {
-  display: block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	height: 0;
-  width: 0;
-  border-radius: 0;
-  margin: 0;
-	@include transition(all 0.3s);
-}
-.icon-button:hover span {
-	width: 3rem;
-	height: 3rem;
-	border-radius: 3rem;
-	margin: -1.5rem;
-}
-.prev span,
-.next span {
-	@extend .rainbow-background;
-}
+	// Circle
+	.icon-button span {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		height: 0;
+		width: 0;
+		border-radius: 0;
+		margin: 0;
+		@include transition(all 0.3s);
+	}
+	.icon-button:hover span {
+		width: 3rem;
+		height: 3rem;
+		border-radius: 3rem;
+		margin: -1.5rem;
+	}
+	.prev span,
+	.next span {
+		@extend .rainbow-background;
+	}
 
-// Icons
-.icon-button i {
-	background: none;
-	color: white;
-	position: absolute;
-	top: 0;
-  left: 0;
-  z-index: 10;
-  height: 3rem;
-	width: 3rem;
-	line-height: 3rem;
-	@include transition(all 0.3s);
-}
-.icon-button .fa-chevron-left,
-.icon-button .fa-chevron-right {
-	@extend .rainbow-font;
-}
+	// Icons
+	.icon-button i {
+		background: none;
+		color: white;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		height: 3rem;
+		width: 3rem;
+		line-height: 3rem;
+		@include transition(all 0.3s);
+	}
+	.icon-button .fa-chevron-left,
+	.icon-button .fa-chevron-right {
+		@extend .rainbow-font;
+	}
 
-.icon-button:hover .fa-chevron-left,
-.icon-button:hover .fa-chevron-right {
-	background-image: linear-gradient(135deg, white, white)
-}
-
-.carousel-inner {
-	word-wrap: break-word;
+	.icon-button:hover .fa-chevron-left,
+	.icon-button:hover .fa-chevron-right {
+		background-image: linear-gradient(135deg, white, white)
+	}
 }
