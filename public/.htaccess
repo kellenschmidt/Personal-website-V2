@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteRule ^php/?$ https://urlshortenerphp.kellenschmidt.com [L]
+RewriteRule ^php/([A-Za-z0-9-_]+)/?$ https://urlshortenerphp.kellenschmidt.com/redirect.php?code=$1 [L]
+RewriteRule ^url/?$ https://urlshortener.kellenschmidt.com [L]
+RewriteRule ^([A-Za-z0-9-_]+)/?$ https://urlshortener.kellenschmidt.com/$1 [L]
