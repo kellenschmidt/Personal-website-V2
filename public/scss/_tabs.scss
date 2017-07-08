@@ -1,0 +1,87 @@
+/* Sample usage of new-tabs
+<div class="new-tabs">
+    <!-- Nav tabs -->
+    <nav class="nav nav-tabs nav-justified" role="tablist">
+        <a class="nav-item nav-link waves-effect waves-light active" data-toggle="tab" href="#tab1" role="tab"><i class="fa fa-code"></i> Tab 1 Name</a>
+        <a class="nav-item nav-link waves-effect waves-light" data-toggle="tab" href="#tab2" role="tab"><i class="fa fa-code"></i> Tab 2 Name</a>
+    </nav>
+    <!-- Tab panels -->
+    <div class="tab-content">
+        <div class="tab-pane fade in show active" id="tab1" role="tabpanel">
+            // Tab 1 content
+        </div>
+        <div class="tab-pane fade" id="tab2" role="tabpanel">
+            // Tab 2 content
+        </div>
+    </div><!-- .tab-content -->
+</div><!-- .new-tabs -->
+*/
+
+.new-tabs {
+    .nav-tabs {
+        background-color: #FE993A;
+        margin-bottom: 1rem;
+        padding: 0.7rem;
+    }
+
+    .nav-tabs,
+    .nav-link,
+    .nav-link:hover,
+    .nav-link.active,
+    .nav .nav-link {
+        color: white;
+        border: 0;
+    }
+
+    .nav-tabs .nav-link.active {
+        background-color: rgba(255,255,255,.2);
+        color: white;
+    }
+}
+
+/* Sample usage of classic-tabs
+<div class="classic-tabs">
+    <!-- Nav tabs -->
+    <nav class="nav" role="tablist">
+        <a class="nav-item nav-link waves-effect waves-light active" data-toggle="tab" href="#tab1" role="tab">Tab 1</a>
+        <a class="nav-item nav-link waves-effect waves-light " data-toggle="tab2" href="#tab2" role="tab">Tab 2</a>
+    </nav>
+    <!-- Tab panels -->
+    <div class="tab-content card">
+        <div class="tab-pane fade in show active" id="tab1" role="tabpanel">
+            // Tab 1 content
+        </div><!-- .tab-pane (1st tab) -->
+        <div class="tab-pane fade" id="tab2" role="tabpanel">
+            // Tab 2 content
+        </div><!-- .tab-pane (2nd tab) -->
+    </div><!-- .tab-content -->
+</div><!-- .classic-tabs -->
+*/
+
+.classic-tabs {
+    .nav {
+        background-color: #FE993A;
+        margin: 0;
+        padding: 0;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        text-align: center;
+
+        .nav-link {
+            padding: 1.2rem;
+            color: rgba(256, 256, 256, 0.7);
+            &.active {
+                color: rgba(256, 256, 256, 1);
+                border-bottom: 3px solid black;
+            }
+        }
+
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    .tab-content {
+        padding: 1rem;
+    }
+}
