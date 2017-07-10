@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/kellenschmidt/kellenschmidt.com.png?label=ready&title=Ready)](https://waffle.io/kellenschmidt/kellenschmidt.com?utm_source=badge)
 # kellenschmidt.com
 <img src="https://varahund.files.wordpress.com/2016/06/varning.jpg" width=24/><i>  Currently in progress</i>
 
