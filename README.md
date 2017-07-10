@@ -4,9 +4,7 @@
 
 https://kellenschmidt.com
 
-Personal website of Kellen Schmidt made to demonstrate his abilities as well as show his work experience and portfolio of projects.
-
-The site was written completely from scratch by Kellen in his freetime
+Personal website of Kellen Schmidt written completely from scratch and designed to illustrate his abilities, work experience, and portfolio of projects.
 
 ## Tools used
 ### Bootstrap 4
