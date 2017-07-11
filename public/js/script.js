@@ -10,8 +10,7 @@ wow.init();
 
 // Fade out animation for title content when scrolling down
 var titleHeightFromTopStart = $("#name-and-description")[0].getBoundingClientRect().top;
-$(window).scroll(function (i, obj) {
-    var paddingTop = 0;
+$(window).scroll(function (i) {
     // Number of pixels between top of elements and top of viewport
     var mainHeightFromTop = $("#mainContent")[0].getBoundingClientRect().top;
     var titleHeightFromTop = $("#name-and-description")[0].getBoundingClientRect().top;
@@ -47,16 +46,16 @@ $(function () {
 });
 
 // Collapse navigation bar when link is clicked
-$(function(){ 
-    $(".navbar-nav a:not([data-toggle])").on("click", function(){
+$(function(){
+    $(".navbar-nav a:not([data-toggle])").on("click", function() {
         $(".navbar-collapse").collapse("hide");
     });
 });
 
 // Card carousel manual controls
 $(function() {
-    $(".next").click(function(){ $(".carousel").carousel("next");return false; });
-    $(".prev").click(function(){ $(".carousel").carousel("prev");return false; });
+    $(".next").click(function() { $(".carousel").carousel("next");return false; });
+    $(".prev").click(function() { $(".carousel").carousel("prev");return false; });
 });
 
 // Modal for "projects" and "work experience"
@@ -64,13 +63,13 @@ $("#learnMoreModal").on("show.bs.modal", function($event) {
     var $button = $($event.relatedTarget); // Button that triggered the modal
     var $id = $button.attr("id");
     var $modal = $(this);
-    
+
     // Display Material Design loading spinner
     $modal.find(".modal-body").html("<div class='text-center'><svg class='spinner' width='65px' height='65px' viewBox='0 0 66 66' xmlns='http://www.w3.org/2000/svg'><circle class='path' fill='none' stroke-width='6' stroke-linecap='round' cx='33' cy='33' r='30'></circle></svg></div>");
     // Set button to default color
     $modal.find(".modal-footer button").css("background-color", "buttonface");
 
-    //AJAX request to get content for modal from API and set modal content in callback
+    // AJAX request to get content for modal from API and set modal content in callback
     $.ajax({
         "url": "https://api.kellenschmidt.com/modal/" + $id,
         "type": "GET",
