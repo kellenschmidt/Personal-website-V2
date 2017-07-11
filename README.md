@@ -1,5 +1,5 @@
 # kellenschmidt.com
-[![Dependency status](https://david-dm.org/kellenschmidt/kellenschmidt.com.svg)]
+[![Dependency status](https://david-dm.org/kellenschmidt/kellenschmidt.com.svg)](http://david-dm.org)
 [![Code Climate](https://codeclimate.com/github/kellenschmidt/kellenschmidt.com/badges/gpa.svg)](https://codeclimate.com/github/kellenschmidt/kellenschmidt.com)
 [![NSP Status](https://nodesecurity.io/orgs/kellenschmidtcom/projects/34631a75-0eb3-4ec7-a170-17a2c248b612/badge)](https://nodesecurity.io/orgs/kellenschmidtcom/projects/34631a75-0eb3-4ec7-a170-17a2c248b612)
 [![Stories in Progress](https://badge.waffle.io/kellenschmidt/kellenschmidt.com.png?label=in%20progress&title=In%20progress)](https://waffle.io/kellenschmidt/kellenschmidt.com?utm_source=badge)
