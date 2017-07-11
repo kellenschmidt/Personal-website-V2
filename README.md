@@ -1,5 +1,5 @@
 # kellenschmidt.com
-[![Dependency status](https://david-dm.org/kellenschmidt/kellenschmidt.com.svg)](http://david-dm.org)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c154f784e3524b81b94f17a9ed670f4c)](https://www.codacy.com/app/kellenschmidt/kellenschmidt.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kellenschmidt/kellenschmidt.com&amp;utm_campaign=Badge_Grade)
 [![Code Climate](https://codeclimate.com/github/kellenschmidt/kellenschmidt.com/badges/gpa.svg)](https://codeclimate.com/github/kellenschmidt/kellenschmidt.com)
 [![NSP Status](https://nodesecurity.io/orgs/kellenschmidtcom/projects/34631a75-0eb3-4ec7-a170-17a2c248b612/badge)](https://nodesecurity.io/orgs/kellenschmidtcom/projects/34631a75-0eb3-4ec7-a170-17a2c248b612)
 [![Stories in Progress](https://badge.waffle.io/kellenschmidt/kellenschmidt.com.png?label=in%20progress&title=In%20progress)](https://waffle.io/kellenschmidt/kellenschmidt.com?utm_source=badge)
@@ -38,16 +38,11 @@ Software utility that enables scheduling of commands or shell scripts to run per
     ```
     npm install
     ```
-3. Install Sass (If you don't have it already)
+3. Run the Grunt task runner
     ```
-    gem install sass
+    grunt
     ```
-    
-4. Start Sass compiler
-    ```
-    sass --watch scss:stylesheets
-    ```
-5. Open the website
+5. Launch the website
     ```
     open index.html
     ```
