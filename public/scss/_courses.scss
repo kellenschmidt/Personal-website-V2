@@ -4,7 +4,7 @@
 #coursesCarousel {
 	// Equal card height
 	.row-equal > div[class*='col-'] {
-			display: flex;
+		display: flex;
 	}
 	.row-equal .card {
 		width: 100%;
@@ -71,6 +71,8 @@
 
 	.icon-button:hover .fa-chevron-left,
 	.icon-button:hover .fa-chevron-right {
-		background-image: linear-gradient(135deg, white, white)
+		background-image: linear-gradient(135deg, white, white);
+		// Makes button icon white on hover
+		-webkit-text-fill-color: transparent;       // Only for webkit
 	}
 }
