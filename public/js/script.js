@@ -10,7 +10,7 @@ wow.init();
 
 // Fade out animation for title content when scrolling down
 var titleHeightFromTopStart = $("#name-and-description")[0].getBoundingClientRect().top;
-$(window).scroll(function (i) {
+$(window).scroll(function() {
     // Number of pixels between top of elements and top of viewport
     var mainHeightFromTop = $("#mainContent")[0].getBoundingClientRect().top;
     var titleHeightFromTop = $("#name-and-description")[0].getBoundingClientRect().top;
@@ -24,8 +24,8 @@ $(window).scroll(function (i) {
 });
 
 // Smooth scroll on down arrow click
-$(function () {
-    $("a[href*='#']:not([href='#'])").click(function () {
+$(function() {
+    $("a[href*='#']:not([href='#'])").click(function() {
         if (location.pathname.replace(/^\//, "") === this.pathname.replace(/^\//, "") && location.hostname === this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
@@ -41,12 +41,12 @@ $(function () {
 });
 
 // Enable tooltips
-$(function () {
+$(function() {
     $("[data-toggle='tooltip']").tooltip();
 });
 
 // Collapse navigation bar when link is clicked
-$(function(){
+$(function() {
     $(".navbar-nav a:not([data-toggle])").on("click", function() {
         $(".navbar-collapse").collapse("hide");
     });

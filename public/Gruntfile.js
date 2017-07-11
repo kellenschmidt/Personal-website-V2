@@ -28,26 +28,20 @@ module.exports = function(grunt) {
     uglify: {
       my_target: {
         files: {
-          'dist/output.min.js': ['js/*.js']
+          'dist/output.min.js': ['js/**/*.js']
         }
       }
-    },
-    sasslint: {
-        options: {
-            configFile: '.sass-lint.yml',
-        },
-        target: ['scss/**/*.scss']
     },
     watch: {
       scss: {
         files: ['scss/**/*.scss'],
-        tasks: ['sass', 'cssmin'],
+        tasks: ['sass', 'cssmin']
       },
       js: {
         files: ['js/**/*.js'],
-        tasks: ['uglify'],
+        tasks: ['uglify']
       }
-    },
+    }
   });
 
   // Load the plugin that provides the tasks.
@@ -55,9 +49,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-sass-lint');
 
   // Default task(s).
   grunt.registerTask('default', ['sass', 'cssmin', 'uglify']);
-
 };
