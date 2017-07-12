@@ -1,5 +1,4 @@
 # kellenschmidt.com
-[![Build Status](https://travis-ci.org/kellenschmidt/kellenschmidt.com.svg?branch=master)](https://travis-ci.org/kellenschmidt/kellenschmidt.com)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c154f784e3524b81b94f17a9ed670f4c)](https://www.codacy.com/app/kellenschmidt/kellenschmidt.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kellenschmidt/kellenschmidt.com&amp;utm_campaign=Badge_Grade)
 [![Code Climate](https://codeclimate.com/github/kellenschmidt/kellenschmidt.com/badges/gpa.svg)](https://codeclimate.com/github/kellenschmidt/kellenschmidt.com)
 [![Stories in Progress](https://badge.waffle.io/kellenschmidt/kellenschmidt.com.png?label=in%20progress&title=In%20progress)](https://waffle.io/kellenschmidt/kellenschmidt.com?utm_source=badge)
