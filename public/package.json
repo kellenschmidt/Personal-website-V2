@@ -4,6 +4,7 @@
   "description": "Personal portfolio website to showcase my projects and abilities",
   "main": "public/index.html",
   "dependencies": {
+    "cloudinary-core": "^2.3.0",
     "mdbootstrap": "^4.3.2",
     "wowjs": "^1.1.3"
   },
