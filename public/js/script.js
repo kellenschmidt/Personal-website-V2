@@ -58,6 +58,27 @@ $(function() {
     $(".prev").click(function() { $(".carousel").carousel("prev");return false; });
 });
 
+// AJAX request to log page visit including user and page information
+$.ajax({
+    "url": "https://api.kellenschmidt.com/page-visit",
+    "type": "POST",
+    "dataType": "json",
+    "timeout": 10000,
+    "data": {
+        "site": document.domain,
+        "referrer": document.referrer
+    },
+    "success": function($data) {
+        // Dont do anything on success
+        console.log("POST to https://api.kellenschmidt.com/page-visit was successful");
+    },
+    "error": function($jqXHR, $textStatus, $errorThrown) {
+        // Display error message
+        console.log("Ajax request failed: " + $textStatus + ", " + $errorThrown);
+        console.log("Error: POST to https://api.kellenschmidt.com/page-visit failed. Response: " + $jqXHR.responseText);
+    }
+});
+
 // Modal for "projects" and "work experience"
 $("#learnMoreModal").on("show.bs.modal", function($event) {
     var $button = $($event.relatedTarget); // Button that triggered the modal
