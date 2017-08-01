@@ -1,3 +1,8 @@
+body {
+  overflow: hidden;
+  height: 100vh;
+}
+
 // "Hey I'm Kellen Schmidt"
 #name {
   font-size: 13vmin;
@@ -10,34 +15,21 @@
   font-weight: 400;
 }
 
-// Black and white wallpaper
-body {
-  // For background image see images.js
-  // background-size: cover;
-  // position: relative;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-attachment: fixed;
-  overflow: hidden;
-  height: 100vh;
-  // width: 100%;
-}
-
 /*  Down scroll arrow  */
 #title-scroll-down {
-    animation: bouncing 1.3s infinite ease-in-out;
-    position: fixed;
-    opacity: 0.75;
+  animation: bouncing 1.3s infinite ease-in-out;
+  position: fixed;
+  opacity: 0.75;
 }
 
 /* Fallback for iPhone Safari to emulate background-attachment: fixed */
-.background-fallback {
+.background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  .background-fallback-image {
+  .background-image {
     // For background image see images.js
     background-size: cover;
     background-position: center center;

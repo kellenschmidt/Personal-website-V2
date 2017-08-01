@@ -2,17 +2,11 @@
 wow = new WOW({
     boxClass: "wow",
     animateClass: "animated",
-    offset: 60,
+    offset: 50,
     mobile: true,
     live: true
 });
 wow.init();
-
-// Determine if browser is iPhone Safari
-var ua = window.navigator.userAgent;
-var iPhone = !!ua.match(/iPhone/i);
-var webkit = !!ua.match(/WebKit/i);
-var iPhoneSafari = iPhone && webkit && !ua.match(/CriOS/i);
 
 // Fade out animation for title content when scrolling down
 var titleHeightFromTopStart = $("#name-and-description")[0].getBoundingClientRect().top;
