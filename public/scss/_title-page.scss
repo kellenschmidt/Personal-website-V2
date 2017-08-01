@@ -11,16 +11,16 @@
 }
 
 // Black and white wallpaper
-.title-page-wallpaper {
+body {
   // For background image see images.js
-  background-size: cover;
-  position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  // background-size: cover;
+  // position: relative;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
   overflow: hidden;
   height: 100vh;
-  width: 100%;
+  // width: 100%;
 }
 
 /*  Down scroll arrow  */
@@ -28,4 +28,20 @@
     animation: bouncing 1.3s infinite ease-in-out;
     position: fixed;
     opacity: 0.75;
+}
+
+/* Fallback for iPhone Safari to emulate background-attachment: fixed */
+.background-fallback {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  .background-fallback-image {
+    // For background image see images.js
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+  }
 }
