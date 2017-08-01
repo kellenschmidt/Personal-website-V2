@@ -2,11 +2,22 @@
 wow = new WOW({
     boxClass: "wow",
     animateClass: "animated",
-    offset: 70,
+    offset: 60,
     mobile: true,
     live: true
 });
 wow.init();
+
+// Determine if browser is iPhone Safari
+var ua = window.navigator.userAgent;
+var iPhone = !!ua.match(/iPhone/i);
+var webkit = !!ua.match(/WebKit/i);
+var iPhoneSafari = iPhone && webkit && !ua.match(/CriOS/i);
+
+// If device/browser is iPhone Safari then set background-attachment to compatible value
+if(iPhoneSafari) {
+    $(".title-page-wallpaper").css("background-attachment", "scroll");
+}
 
 // Fade out animation for title content when scrolling down
 var titleHeightFromTopStart = $("#name-and-description")[0].getBoundingClientRect().top;
@@ -21,6 +32,12 @@ $(window).scroll(function() {
     // Add padding-top to title content so it scroll up more slowly
     var newPadding = (titleHeightFromTopStart-titleHeightFromTop)/1.45;
     $("#name-and-description").css("padding-top", newPadding);
+
+    // Special scrolling algorithm for iPhone Safari to emulate background-attachment: fixed
+    if(iPhoneSafari) {
+        var scrolledY = $(window).scrollTop();
+        $(".title-page-wallpaper").css("background-position", "center " + ((scrolledY)) + "px");
+    } 
 });
 
 // Smooth scroll on down arrow click
