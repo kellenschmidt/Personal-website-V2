@@ -1,4 +1,4 @@
-# kellenschmidt.com
+# kellenschmidt.com (Old HTML version)
 
 Personal website of Kellen Schmidt written completely from scratch and designed to illustrate his abilities, work experience, and portfolio of projects.
 
