@@ -1,13 +1,10 @@
 # kellenschmidt.com
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/c154f784e3524b81b94f17a9ed670f4c)](https://www.codacy.com/app/kellenschmidt/kellenschmidt.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kellenschmidt/kellenschmidt.com&amp;utm_campaign=Badge_Grade)
-[![Code Climate](https://codeclimate.com/github/kellenschmidt/kellenschmidt.com/badges/gpa.svg)](https://codeclimate.com/github/kellenschmidt/kellenschmidt.com)
-[![Stories in Ready](https://badge.waffle.io/kellenschmidt/kellenschmidt.com.png?staged%20for%20development&title=Staged%20for%20Development)](https://waffle.io/kellenschmidt/kellenschmidt.com?utm_source=badge)
 
 Personal website of Kellen Schmidt written completely from scratch and designed to illustrate his abilities, work experience, and portfolio of projects.
 
 ### Deprecated
 
-<img src="https://varahund.files.wordpress.com/2016/06/varning.jpg" width=24/>  This version of kellenschmidt.com is no longer in use and has been replaced by a rewritten [Angular version](https://github.com/kellenschmidt/kellenschmidt.com)
+<img src="https://varahund.files.wordpress.com/2016/06/varning.jpg" width=24/> This version of kellenschmidt.com is no longer in use and has been replaced by a rewritten [Angular version](https://github.com/kellenschmidt/kellenschmidt.com)
 
 ## Tools used
 ### Bootstrap 4
